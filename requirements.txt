@@ -1,0 +1,2 @@
+flask 
+An e-commerce and showcase platform for ClayCraft Pottery, built with Flask. Features include product galleries for handcrafted ceramics and user authentication

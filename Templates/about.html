@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | ClayCraft Pottery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/products">Products</a>
+    <a href="/contact">Contact</a>
+    <a href="/login">Login</a>
+</nav>
+
+<div class="container">
+    <h2>About ClayCraft Pottery</h2>
+
+    <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="About Pottery">
+
+    <p>
+        At ClayCraft Pottery, we blend creativity and tradition to craft unique pottery
+pieces that bring warmth and elegance to your space. From custom-made mugs to
+decorative vases, each item tells its own story.
+    </p>
+</div>
+
+</body>
+</html>

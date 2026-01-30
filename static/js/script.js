@@ -1,0 +1,1 @@
+console.log("Gikomba Pottery website loaded successfully");
