@@ -7,7 +7,8 @@
 </head>
 <body>
 
-<nav>
+<!-- NAVIGATION -->
+<nav class="navbar">
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/products">Products</a>
@@ -15,17 +16,98 @@
     <a href="/login">Login</a>
 </nav>
 
-<div class="container">
+<!-- HERO / INTRO SECTION -->
+<header class="hero">
     <h1>ClayCraft Pottery Group Association</h1>
 
-    <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="Pottery Artisans">
+    <p>
+        ClayCraft Pottery is a creative pottery studio dedicated to producing
+        handcrafted ceramic products that combine beauty, functionality, and
+        tradition. Our work reflects patience, creativity, and a deep respect
+        for artisan skills.
+    </p>
 
     <p>
-        ClayCraft Pottery is a local artisan pottery studio offering handcrafted pots,
-mugs, plates, and ceramic art. Each piece is made with love and inspired by
-traditional craftsmanship.
+        Each piece is carefully shaped by hand, fired using traditional methods,
+        and finished with natural glazes. We believe pottery is more than art —
+        it is a story, a culture, and a way of life.
     </p>
-</div>
+
+    <p>
+        From everyday mugs to decorative vases, ClayCraft Pottery brings warmth
+        and authenticity into homes, offices, and spaces that value handmade beauty.
+    </p>
+</header>
+
+<!-- MAIN IMAGE -->
+<section class="main-image">
+    <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="Pottery artisans at work">
+</section>
+
+<!-- IMAGE GALLERY -->
+<section class="gallery">
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/wood.jpg') }}" alt="Clay mug">
+        <h3>Handcrafted Mugs</h3>
+        <p>Perfect for daily use and special moments.</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/metal.jpg') }}" alt="Clay vase">
+        <h3>Decorative Vases</h3>
+        <p>Designed to enhance beauty in any space.</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/contact.jpg') }}" alt="Pottery workshop">
+        <h3>Custom Creations</h3>
+        <p>Personalized pottery made to your taste.</p>
+    </div>
+</section>
+
+<!-- STORY SECTION -->
+<section class="story">
+    <h2>Our Craft & Passion</h2>
+
+    <p>
+        ClayCraft Pottery was founded to preserve and promote traditional pottery
+        skills while embracing modern design. Our artisans dedicate time and care
+        to every stage of the pottery-making process.
+    </p>
+
+    <p>
+        We source quality clay locally and use environmentally conscious techniques
+        to ensure sustainability. No two products are exactly alike — each piece
+        carries its own unique character.
+    </p>
+
+    <p>
+        Whether you are decorating your home or gifting a loved one, our pottery
+        pieces are designed to last and to tell a story of craftsmanship and care.
+    </p>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>ClayCraft Pottery 🏺</h3>
+
+        <p>
+            Handcrafted pottery made with passion, tradition, and creativity.
+            Bringing timeless ceramic art into everyday life.
+        </p>
+
+        <p>
+            📍 Nairobi, Kenya <br>
+            📧 info@claycraftpottery.com <br>
+            ☎ +254 712 000 000
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 ClayCraft Pottery. All rights reserved.
+        </p>
+    </div>
+</footer>
+
 
 </body>
 </html>
