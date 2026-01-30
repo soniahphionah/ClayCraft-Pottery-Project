@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Pottery Collection</title>
-    <h2>Our Pottery Collection</h2>
+    <title>Products | ClayCraft Pottery</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-<nav>
+<nav class="navbar">
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/products">Products</a>
@@ -16,21 +15,32 @@
     <a href="/login">Login</a>
 </nav>
 
-<div class="container">
-    <h2>Available Products</h2>
-
-    <div class="card">
-        <img src="{{ url_for('static', filename='images/metal.jpg') }}">
-        <h4>Clay Mug</h4>
-  <p>Price: KES 800</p>
-    </div>
-
-    <div class="card">
+<section class="gallery">
+    <div class="gallery-item">
         <img src="{{ url_for('static', filename='images/wood.jpg') }}">
-         <h4>Decorative Vase</h4>
-  <p>Price: KES 1,200</p>
+        <h3>Clay Mug</h3>
+        <p>KES 800</p>
     </div>
-</div>
+
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/metal.jpg') }}">
+        <h3>Decorative Vase</h3>
+        <p>KES 1,200</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/hero.jpg') }}">
+        <h3>Ceramic Bowl</h3>
+        <p>KES 1,000</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>ClayCraft Pottery 🏺</h3>
+        <p>&copy; 2026 ClayCraft Pottery</p>
+    </div>
+</footer>
 
 </body>
 </html>

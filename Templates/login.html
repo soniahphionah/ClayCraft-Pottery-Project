@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
-        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Login | ClayCraft Pottery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
 
-    <body>
-    
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/products">Products</a>
+    <a href="/contact">Contact</a>
+    <a href="/login">Login</a>
+</nav>
 
+<section class="story">
+    <h2>Login</h2>
+    <p>Login functionality will be added soon.</p>
+</section>
 
-        <h2>Login</h2>
+<footer class="footer">
+    <div class="footer-content">
+        <h3>ClayCraft Pottery 🏺</h3>
+        <p>&copy; 2026 ClayCraft Pottery</p>
+    </div>
+</footer>
 
-        <form>
-            <label>Email:</label><br>
-            <input type="email"><br><br>
-
-            <label>Password:</label><br>
-            <input type="password"><br><br>
-
-            <button type="submit">Login</button>
-        </form>
-
-        
-
-        <a href="/">Back to Home</a>
-    </body>
+</body>
 </html>

@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact | ClayCraft Pottery/title>
-        <h2>Contact ClayCraft Pottery</h2>
+    <title>Contact | ClayCraft Pottery</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-<nav>
+<nav class="navbar">
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/products">Products</a>
@@ -16,15 +15,19 @@
     <a href="/login">Login</a>
 </nav>
 
-<div class="container">
+<section class="story">
     <h2>Contact Us</h2>
+    <p>Email: info@claycraftpottery.com</p>
+    <p>Phone: +254 712 000 000</p>
+    <p>Location: Nairobi, Kenya</p>
+</section>
 
-    <img src="{{ url_for('static', filename='images/contact.jpg') }}">
-
-    <p>Email: claycraftpottery@gmail.com</p>
-    <p>Location: Ngong rd Market, Nairobi</p>
-    <p>Phone: +254 700 000 000</p>
-</div>
+<footer class="footer">
+    <div class="footer-content">
+        <h3>ClayCraft Pottery 🏺</h3>
+        <p>&copy; 2026 ClayCraft Pottery</p>
+    </div>
+</footer>
 
 </body>
 </html>
