@@ -211,3 +211,52 @@ img {
 .gallery-item:hover {
     transform: translateY(-5px);
 }
+button {
+    transition: background-color 0.3s ease;
+}
+
+/* TRUST SECTION TEXT */
+.gallery-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.gallery-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background-color: #6b4f3f;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #543c2f;
+}
+
+body {
+    background-color: #faf7f4;
+}
+
