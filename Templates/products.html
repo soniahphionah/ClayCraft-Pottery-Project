@@ -15,8 +15,9 @@
     <a href="/login">Login</a>
 </nav>
 
+<!--Product gallery-->
 <section class="gallery">
-    <div class="gallery-item">
+   <div class="gallery-item" onclick="window.location.href='/product-detail?name=Clay%20Mug&price=800'">
     <img src="{{ url_for('static', filename='images/craft.jpg') }}">
     <h3>Handcrafted Clay Mug</h3>
     <p>
@@ -24,9 +25,10 @@
         for durability and everyday use.
     </p>
     <p><strong>Price:</strong> KES 800</p>
+    <button onclick="addToCart('Clay Mug', 800)">Add to Cart</button>
 </div>
 
-    <div class="gallery-item">
+    <div class="gallery-item" onclick="window.location.href='/product-detail?name=Clay%20Vase&price=2800'">
     <img src="{{ url_for('static', filename='images/colors.jpg') }}">
     <h3>Handcrafted Clay Vases</h3>
     <p>
@@ -34,30 +36,59 @@
         for durability and everyday use.
     </p>
     <p><strong>Price:</strong> KES 2800</p>
+    <button onclick="addToCart('Clay Vase', 2800)">Add to Cart</button>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item" onclick="window.location.href='/product-detail?name=Clay%20Pot&price=1500'">
     <img src="{{ url_for('static', filename='images/clay.jpg') }}">
-    <h3>Handcrafted Clay Mug</h3>
+    <h3>Handcrafted Clay Pot</h3>
     <p>
         A beautifully handcrafted clay pot, kiln-fired and glazed
         for durability and everyday use.
     </p>
-    <p><strong>Price:</strong> KES 1000</p>
+    <p><strong>Price:</strong> KES 1500</p>
+    <button onclick="addToCart('Clay Pot', 1500)">Add to Cart</button>
 </div>
-
-   
-  
-
+  <div class="gallery-item" onclick="window.location.href='/product-detail?name=Decorative%20Vase&price=1200'">
+    <img src="{{ url_for('static', filename='images/vase 2.jpg') }}">
+    <img src="{{ url_for('static', filename='images/vase 1.jpg') }}">
+    <h3>Handcrafted Decorative Vase</h3>
     <p>
+        A beautifully handcrafted decorative vase, kiln-fired and glazed
+        for durability and everyday use.
+    </p>
+    <p><strong>Price:</strong> KES 1200</p>
+    <button onclick="addToCart('Decorative Vase', 1200)">Add to Cart</button>
+  </div>
+
+  <div class="gallery-item" onclick="window.location.href='/product-detail?name=Ceramic%20Bowl&price=1000'">
+    <img src="{{ url_for('static', filename='images/bowl.jpg') }}">
+    <h3>Handcrafted Ceramic Bowl</h3>
+    <p>
+        A beautifully handcrafted ceramic bowl, kiln-fired and glazed
+        for durability and everyday use.
+    </p>
+    <p><strong>Price:</strong> KES 1000</p>
+    <button onclick="addToCart('Ceramic Bowl', 1000)">Add to Cart</button>
+  </div>
+<p>
 Handcrafted clay mug, glazed and kiln-fired for durability.
 Perfect for tea, coffee, or daily use.
 </p>
 
 </section>
 
+<!-- PRODUCT DETAILS MODAL -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+    </div>
+</div>
 
-
+<!-- FOOTER -->
 <footer class="footer">
     <div class="footer-content">
         <h3>ClayCraft Pottery 🏺</h3>

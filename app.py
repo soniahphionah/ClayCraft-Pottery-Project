@@ -31,4 +31,8 @@ def products() :
     return render_template("products.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run()(debug=True)
+
+@app.route("/cart")
+def cart():
+    return render_template("cart.html")

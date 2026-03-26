@@ -5,6 +5,7 @@
     <title>Home | ClayCraft Pottery</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
 
 <!-- NAVIGATION -->
@@ -14,6 +15,8 @@
     <a href="/products">Products</a>
     <a href="/contact">Contact</a>
     <a href="/login">Login</a>
+
+    <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
 </nav>
 
 <!-- HERO / INTRO SECTION -->
@@ -21,27 +24,24 @@
     <h1>ClayCraft Pottery Group Association</h1>
 
     <p>
-        ClayCraft Pottery is a creative pottery studio dedicated to producing
-        handcrafted ceramic products that combine beauty, functionality, and
-        tradition. Our work reflects patience, creativity, and a deep respect
-        for artisan skills.
+        ClayCraft Pottery is a creative pottery studio dedicated to producing handcrafted ceramic products that combine beauty, functionality, and tradition. Our work reflects patience, creativity, and a deep respect for artisan skills.
     </p>
 
     <p>
-        Each piece is carefully shaped by hand, fired using traditional methods,
-        and finished with natural glazes. We believe pottery is more than art —
-        it is a story, a culture, and a way of life.
+        Each piece is carefully shaped by hand, fired using traditional methods, and finished with natural glazes. We believe pottery is more than art, it is a story, a culture, and a way of life.
     </p>
 
     <p>
-        From everyday mugs to decorative vases, ClayCraft Pottery brings warmth
-        and authenticity into homes, offices, and spaces that value handmade beauty.
+        From everyday mugs to decorative vases, ClayCraft Pottery brings warmth and authenticity into homes, offices, and spaces that value handmade beauty.
     </p>
+
+    <button class="cta-btn"onclick="showMessage()">Explore our collection</button>
 </header>
 
 <!-- MAIN IMAGE -->
 <section class="main-image">
     <img src="{{ url_for('static', filename='images/many.jpg') }}" alt="Pottery artisans at work">
+    
 </section>
 
 <!-- IMAGE GALLERY -->
@@ -84,26 +84,33 @@
         <h3>Finished Pieces</h3>
         <p>Beautifully glazed and ready for your home.</p>
 </section>
+<section class="gallery fade-in">
+    <div class="gallery-item">
+        <img src="{{url_for('static', filename='images/bright.jpg')}}" alt="Clay pots">
+        <h3>Handcrafted pots</h3>
+        <p>Perfect for daily use and special moments.</p>
+    </div>
+
+    <div class="gallery-item">
+        <img src="{{url_for('static', filename='images/vases.jpg')}}" alt="Clay vase">
+        <h3>Decorative Vases</h3>
+        <p>Designed to enhance beauty in any space.</p>
+    </div>
 
 <!-- STORY SECTION -->
 <section class="story">
     <h2>Our Craft & Passion</h2>
 
     <p>
-        ClayCraft Pottery was founded to preserve and promote traditional pottery
-        skills while embracing modern design. Our artisans dedicate time and care
-        to every stage of the pottery-making process.
+        ClayCraft Pottery was founded to preserve and promote traditional pottery skills while embracing modern design. Our artisans dedicate time and care to every stage of the pottery-making process.
     </p>
 
     <p>
-        We source quality clay locally and use environmentally conscious techniques
-        to ensure sustainability. No two products are exactly alike — each piece
-        carries its own unique character.
+        We source quality clay locally and use environmentally conscious techniques to ensure sustainability. No two products are exactly alike, each piece carries its own unique character.
     </p>
 
     <p>
-        Whether you are decorating your home or gifting a loved one, our pottery
-        pieces are designed to last and to tell a story of craftsmanship and care.
+        Whether you are decorating your home or gifting a loved one, our pottery pieces are designed to last and to tell a story of craftsmanship and care.
     </p>
 </section>
 
@@ -111,14 +118,19 @@
     <h2>Our Mission</h2>
 
     <p>
-        Our mission at ClayCraft Pottery is to preserve traditional pottery skills
-        while creating beautiful, functional ceramic pieces for modern living.
+        Our mission at ClayCraft Pottery is to preserve traditional pottery skills while creating beautiful, functional ceramic pieces for modern living.
     </p>
 
     <p>
-        We are committed to quality, sustainability, and creativity. Every item
-        we make reflects our respect for nature, craftsmanship, and community.
+        We are committed to quality, sustainability, and creativity. Every item we make reflects our respect for nature, craftsmanship, and community.
     </p>
+
+    <p>
+        Through our work, we aim to connect people with the beauty and tradition of pottery, while fostering a sense of community and shared creativity.
+    </p>
+
+    <section class="story fade-in"></section>
+
 </section>
 
 <section class="split">
@@ -126,18 +138,15 @@
         <h2>How Our Pottery Is Made</h2>
 
         <p>
-            Our pottery-making process begins with carefully selected clay that
-            is shaped by hand or wheel-thrown by skilled artisans.
+            Our pottery-making process begins with carefully selected clay that is shaped by hand or wheel-thrown by skilled artisans.
         </p>
 
         <p>
-            The pieces are air-dried, kiln-fired, glazed, and fired again to
-            ensure strength, durability, and a smooth finish.
+            The pieces are air-dried, kiln-fired, glazed, and fired again to ensure strength, durability, and a smooth finish.
         </p>
 
         <p>
-            This careful process ensures that every ClayCraft piece is both
-            beautiful and long-lasting.
+            This careful process ensures that every ClayCraft piece is both beautiful and long-lasting.
         </p>
     </div>
 
@@ -190,6 +199,6 @@
     </div>
 </footer>
 
-
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

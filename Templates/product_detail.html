@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+</nav>
+
+<section class="story">
+    <h2 id="product-name"></h2>
+    <p id="product-price"></p>
+</section>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("product-name").innerText = params.get("name");
+    document.getElementById("product-price").innerText = "KES " + params.get("price");
+</script>
+
+</body>
+</html>
